@@ -1,7 +1,7 @@
-1. User
+사용자 정보
 ```json
 {
-  "user_id": "UUID",
+  "user_id": "string",
   "email": "string",
   "password": "string",
   "name": "string",
@@ -15,10 +15,11 @@
 }
 ```
 
-2. TravelPlan
+
+여행 게시글
 ```json
 {
-  "travel_id": "UUID",
+  "travel_id": "string",
   "user_id": "string",
   "destination": "string",
   "start_date": "string",
@@ -28,17 +29,7 @@
 }
 ```
 
-3. Application
-```json
-{
-  "application_id": "string",
-  "status": "string",
-  "user_id": "UUID",
-  "related_id": "string"
-}
-```
-
-4. Chat
+채팅
 ```json
 {
   "chat_id": "string",
@@ -48,7 +39,7 @@
 }
 ```
 
-5. Review
+리뷰
 ```json
 {
   "review_id": "string",
@@ -61,7 +52,7 @@
 }
 ```
 
-6. Inquiry
+문의
 ```json
 {
   "inquiry_id": "string",
