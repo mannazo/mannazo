@@ -1,4 +1,5 @@
-![image](https://github.com/mannazo/mannazo/assets/34194400/6fb17fc8-20e4-418c-8620-0192857e07c4)
+![mannazo](https://github.com/mannazo/mannazo/assets/34194400/cca0581e-cde9-443e-864d-bc18210ea28a)
+
 
 
 ```
