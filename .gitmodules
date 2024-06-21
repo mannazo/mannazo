@@ -1,0 +1,6 @@
+[submodule "mannazo-springboot"]
+	path = mannazo-springboot
+	url = https://github.com/mannazo/mannazo-springboot.git
+[submodule "mannazo-react"]
+	path = mannazo-react
+	url = https://github.com/mannazo/mannazo-react.git
