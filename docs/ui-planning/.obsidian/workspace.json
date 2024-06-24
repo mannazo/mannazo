@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "303895578f53a101",
+        "id": "dee49a968b8dcf6f",
         "type": "tabs",
         "children": [
           {
-            "id": "9dc3699f681f3f07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c82cdd223f3baf1",
+            "id": "e2a903782f478bf7",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "UI.ver2.excalidraw.md"
+                "file": "UI.ver4.excalidraw.md"
               }
             }
           }
@@ -95,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "UI.ver4.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "UI.ver4.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "UI.ver4.excalidraw.md"
               }
             }
           }
@@ -157,10 +145,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9dc3699f681f3f07",
+  "active": "e2a903782f478bf7",
   "lastOpenFiles": [
     "UI.ver2.excalidraw.md",
-    "README.md",
-    "UI.ver1.excalidraw.md"
+    "UI.ver4.excalidraw.md",
+    "UI.ver3.excalidraw.md",
+    "UI.ver2.components.excalidraw.md",
+    "UI.ver1.excalidraw.md",
+    "UI.ver2.extract-components.excalidraw.md",
+    "Excalidraw/Drawing 2024-06-24 12.35.41.excalidraw.md",
+    "Excalidraw",
+    "fonts/NanumGarMaesGeur.ttf",
+    "fonts",
+    "font",
+    "New folder",
+    "NanumGarMaesGeur.ttf",
+    "README.md"
   ]
 }
