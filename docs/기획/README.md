@@ -6,4 +6,7 @@
 
 2. Install community plugin `excalidraw`
 
-`Settings` ➡️ LeftPanel `Community Plugin` ➡️ Enable Community Plugin and `Browse` ➡️ Install `Excalidraw` and Enable it.
+`Settings` 
+➡️ LeftPanel `Community Plugin` 
+➡️ Enable Community Plugin and `Browse` 
+➡️ Install `Excalidraw` and Enable it.
