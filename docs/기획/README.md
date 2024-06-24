@@ -6,7 +6,12 @@
 
 2. Install community plugin `excalidraw`
 
-`Settings` 
-➡️ LeftPanel `Community Plugin` 
-➡️ Enable Community Plugin and `Browse` 
+➡️ Go to `Settings` 
+
+➡️ Go to `Community Plugin` Tab
+
+➡️ Enable Community Plugin and Click `Browse` 
+
 ➡️ Install `Excalidraw` and Enable it.
+
+➡️ Open `*.excalidraw.md` file with Obsidian.
