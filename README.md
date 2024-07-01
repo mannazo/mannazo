@@ -1,4 +1,5 @@
 # 프로젝트 개요
+![image](https://github.com/mannazo/mannazo/assets/31683152/3ea07bfa-15c0-4068-a7a9-723953809afb)
 
 ## 팀 이름
 mannazo
