@@ -1,0 +1,51 @@
+@server = 192.168.0.183:8080/user
+
+### Create User
+# @name createUser
+POST http://{{server}}/
+Content-Type: application/json
+{
+  "userId": "sample-UUID",
+  "email": "sample-email@example.com",
+  "name": "Sample Name",
+  "nickname": "Sample Nickname",
+  "nationality": "Sample Nationality",
+  "language": "Sample Language",
+  "profileImage": "Sample Image URL",
+  "introduction": "Sample Introduction",
+  "city": "Sample City",
+  "authority": "Sample Authority",
+  "gender": "Sample Gender",
+  "mbti": "Sample MBTI",
+  "interests": "Sample Interests",
+  "birthday": "YYYY-MM-DD",
+  "lastLoginAt": "YYYY-MM-DDTHH:MM:SS"
+}
+
+###
+
+### Get User by ID
+# @name getUser
+@userId = acaa8338-ecc4-4fba-8c57-f6ed7f114646
+GET http://{{server}}/{{userId}}
+###
+
+### Find All Users
+# @name findAllUsers
+GET http://{{server}}/
+###
+
+### Update User
+# @name updateUser
+PUT http://{{server}}/{{userId}}
+Content-Type: application/json
+{
+  "UserRequestDTO_key_1": "updated_value_1",
+  "UserRequestDTO_key_2": "updated_value_2"
+}
+
+###
+
+### Delete User
+# @name deleteUser
+DELETE http://{{server}}/{{userId}}
