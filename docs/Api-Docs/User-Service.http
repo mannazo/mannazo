@@ -1,17 +1,16 @@
-@server = 192.168.0.183:8080/user
+@server = localhost:8080/user
 
 ### Test
 GET {{server}}
 
 ### Create User
 # @name createUser
-# authority 나중에 빠져야함.
 POST http://{{server}}
 Content-Type: application/json
 
 {
   "loginRequestDTO": {
-    "socialId": "1234",
+    "socialId": "12345",
     "secret": "myM32FAihR1lCrCOtX3KGHo96Z7hsjHw",
     "provider": "kakao"
   },
@@ -24,7 +23,6 @@ Content-Type: application/json
     "profileImage": "profileImage_example",
     "introduction": "introduction_example",
     "city": "city_example",
-    "authority" : "User",
     "gender": "남자",
     "mbti": "mbti_example",
     "interests": "interests_example",
