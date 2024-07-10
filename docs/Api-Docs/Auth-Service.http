@@ -1,5 +1,14 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+@server = http://192.168.0.183:8080/auth
 
-###
+### Test
+GET {{server}}
+
+### Login
+POST {{server}}/login
+Content-Type: application/json
+
+{
+  "socialId" : "1",
+  "secret" : "myM32FAihR1lCrCOtX3KGHo96Z7hsjHw",
+  "provider" : "kakao"
+}

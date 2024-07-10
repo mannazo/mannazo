@@ -1,25 +1,35 @@
 @server = 192.168.0.183:8080/user
 
+### Test
+GET {{server}}
+
 ### Create User
 # @name createUser
-POST http://{{server}}/
+# authority 나중에 빠져야함.
+POST http://{{server}}
 Content-Type: application/json
+
 {
-  "userId": "sample-UUID",
-  "email": "sample-email@example.com",
-  "name": "Sample Name",
-  "nickname": "Sample Nickname",
-  "nationality": "Sample Nationality",
-  "language": "Sample Language",
-  "profileImage": "Sample Image URL",
-  "introduction": "Sample Introduction",
-  "city": "Sample City",
-  "authority": "Sample Authority",
-  "gender": "Sample Gender",
-  "mbti": "Sample MBTI",
-  "interests": "Sample Interests",
-  "birthday": "YYYY-MM-DD",
-  "lastLoginAt": "YYYY-MM-DDTHH:MM:SS"
+  "loginRequestDTO": {
+    "socialId": "1234",
+    "secret": "myM32FAihR1lCrCOtX3KGHo96Z7hsjHw",
+    "provider": "kakao"
+  },
+  "userRequestDTO": {
+    "email": "email_example",
+    "name": "name_example",
+    "nickname": "nickname_example",
+    "nationality": "nationality_example",
+    "language": "language_example",
+    "profileImage": "profileImage_example",
+    "introduction": "introduction_example",
+    "city": "city_example",
+    "authority" : "User",
+    "gender": "남자",
+    "mbti": "mbti_example",
+    "interests": "interests_example",
+    "birthday": "2024-12-21"
+  }
 }
 
 ###
