@@ -5,11 +5,11 @@ GET {{server}}
 
 ### getNumberOfPosts
 # @name getNumberOfPosts
-GET http://{{server}}/count
+GET http://{{server}}/count/posts
 
 ### getNumberOfAllUsers
 # @name getNumberOfUsers
-GET http://{{server}}/count/all
+GET http://{{server}}/count/allUsers
 
 ### getNumberOfUsers
 # @name getNumberOfPosts
