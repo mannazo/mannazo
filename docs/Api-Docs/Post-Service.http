@@ -1,5 +1,64 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
-
 ###
+@server = localhost:8080/post
+
+### Test
+GET http://{{server}}
+
+### Create Post
+# @name createPost
+//Status는 등록, 매칭중, 매칭완료, 여행종료 / preferredGender는 상관없음, 남자, 여자 로만 넣어줘야함
+POST http://{{server}}
+Content-Type: application/json
+
+{
+  "userId": "94760f77-9e64-4322-be0b-d4f6d7956299",
+  "travelNationality": "china",
+  "travelCity": "베이징",
+  "travelStartDate": "2024-07-12",
+  "travelEndDate": "2024-07-24",
+  "travelStatus": "등록",
+  "preferredGender": "상관없음",
+  "travelStyle": "맛집탐방",
+  "travelPurpose": "현지 음식",
+  "imageUrls": [
+    "http://example.com/image1.jpg",
+    "http://example.com/image2.jpg"
+  ]
+}
+
+###Get Post
+#@name getPost
+@postId1 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
+GET http://{{server}}/{{postId1}}
+
+###Get FindAll
+#@name FindAll
+GET http://{{server}}/findAll
+
+###Put updatePost
+#@name updatePost
+@postId2 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
+PUT http://{{server}}/{{postId2}}
+Content-Type: application/json
+
+{
+  "userId": "94760f77-9e64-4322-be0b-d4f6d7956299",
+  "travelNationality": "일본",
+  "travelCity": "도쿄",
+  "travelStartDate": "2024-07-20",
+  "travelEndDate": "2024-07-30",
+  "travelStatus": "매칭중",
+  "preferredGender": "상관없음",
+  "travelStyle": "문화유적",
+  "travelPurpose": "역사탐방",
+  "imageUrls": [
+    "http://example.com/image1.jpg",
+    "http://example.com/image2.jpg"
+  ]
+}
+
+
+###Delete deletePost
+#@name deletePost
+@postId3 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
+DELETE http://{{server}}/{{postId3}}
