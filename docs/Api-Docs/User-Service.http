@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
   "loginRequestDTO": {
-    "socialId": "12345",
+    "socialId": "77",
     "secret": "myM32FAihR1lCrCOtX3KGHo96Z7hsjHw",
     "provider": "kakao"
   },
@@ -18,7 +18,7 @@ Content-Type: application/json
     "email": "email_example",
     "name": "name_example",
     "nickname": "nickname_example",
-    "nationality": "nationality_example",
+    "nationality": "korea",
     "language": "language_example",
     "profileImage": "profileImage_example",
     "introduction": "introduction_example",

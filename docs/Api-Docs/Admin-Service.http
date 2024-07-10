@@ -1,6 +1,19 @@
-@server = 192.168.0.183:8080/admin
+@server = localhost:8080/admin
 
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### Test
+GET {{server}}
+
+### getNumberOfPosts
+# @name getNumberOfPosts
+GET http://{{server}}/count
+
+### getNumberOfAllUsers
+# @name getNumberOfUsers
+GET http://{{server}}/count/all
+
+### getNumberOfUsers
+# @name getNumberOfPosts
+@nationality = china
+GET http://{{server}}/count/{{nationality}}
 
 ###
