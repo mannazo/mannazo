@@ -2,6 +2,7 @@
 @server = localhost:8080/post
 
 ### Test
+# @name 서버켜졌나?
 GET http://{{server}}
 
 ### Create Post
@@ -31,10 +32,6 @@ Content-Type: application/json
 @postId1 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
 GET http://{{server}}/{{postId1}}
 
-###Get FindAll
-#@name FindAll
-GET http://{{server}}/findAll
-
 ###Put updatePost
 #@name updatePost
 @postId2 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
@@ -62,3 +59,14 @@ Content-Type: application/json
 #@name deletePost
 @postId3 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
 DELETE http://{{server}}/{{postId3}}
+
+###Get FindAll
+//elements = 20
+#@name FindAll
+GET http://{{server}}/findAll?page=0
+
+###Get Search
+//travelCity, preferredGender, travelStyle[], travelStatus, startDate, endDate, travelNationalities[], 조회가능 page = 도 가능
+//elements = 20개씩
+#@name Search
+GET http://{{server}}/search?startDate=2024-01-01&endDate=2024-12-31&page=0

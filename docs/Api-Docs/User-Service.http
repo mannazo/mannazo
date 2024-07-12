@@ -52,8 +52,10 @@ Content-Type: application/json
   "UserRequestDTO_key_2": "updated_value_2"
 }
 
-###
-
 ### Delete User
 # @name deleteUser
 DELETE http://{{server}}/{{userId}}
+
+###GetAllUserIds
+# @name AllUserIds
+GET http://{{server}}/getAllUserIds
