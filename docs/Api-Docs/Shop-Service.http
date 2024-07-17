@@ -1,5 +1,28 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+@server = localhost:8080/shop
 
-###
+### Test
+# @name 서버켜졌나?
+GET http://{{server}}/
+
+###order
+POST http://{{server}}/order
+Content-Type: application/json
+
+{
+  "userId": "300e9115-f3c8-4236-8f30-bf2998746c59",
+  "name": "김동호",
+  "tel": "010-0000-0000",
+  "email": "kdh96331@naver.com",
+  "addr": "한국",
+  "postcode": "0102-3020",
+  "merchantUid": "jfdbsafd92bndfk-2jfdd",
+  "orderItems": [
+    {
+      "productId": "1915efcc-a0ab-4806-b321-04b0ab810c0d",
+      "quantity": 2
+    },
+    {"productId": "68fbf1cc-7e98-4025-a0d0-14709d6c18c0",
+    "quantity": 4}
+  ],
+  "orderStatus": "Pending"
+}

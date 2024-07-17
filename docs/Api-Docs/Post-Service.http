@@ -54,7 +54,6 @@ Content-Type: application/json
   ]
 }
 
-
 ###Delete deletePost
 #@name deletePost
 @postId3 = 4b05a239-51c2-4ba9-b960-8f4c2e08686d
@@ -70,3 +69,8 @@ GET http://{{server}}/findAll?page=0
 //elements = 20개씩
 #@name Search
 GET http://{{server}}/search?startDate=2024-01-01&endDate=2024-12-31&page=0
+
+###Get Post by UserId
+# @name getPostByUserId
+@userId4 = d3809096-3f96-4612-a563-e18f005b1c51
+GET http://{{server}}/user/{{userId4}}

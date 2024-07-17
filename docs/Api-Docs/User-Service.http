@@ -45,11 +45,24 @@ GET http://{{server}}/
 
 ### Update User
 # @name updateUser
-PUT http://{{server}}/{{userId}}
+@userId1 = 9b82d009-b7b6-490a-b9bf-7293646545f1
+PUT http://{{server}}/{{userId1}}
 Content-Type: application/json
+
 {
-  "UserRequestDTO_key_1": "updated_value_1",
-  "UserRequestDTO_key_2": "updated_value_2"
+  "email": "new email",
+  "name": "new name_example",
+  "nickname": "kkkk",
+  "nationality": "japan",
+  "language": "korean",
+  "profileImage": "profileImage",
+  "introduction": "introduction",
+  "city": "seoul",
+  "gender": "여자",
+  "mbti": "mbti_example",
+  "interests": "interests",
+  "birthday": "2024-12-21"
+  
 }
 
 ### Delete User

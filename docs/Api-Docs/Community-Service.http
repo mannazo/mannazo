@@ -1,0 +1,47 @@
+@server = localhost:8080/community
+
+### Test
+# @name 서버켜졌나?
+GET http://{{server}}/
+
+### GetCommunities
+# @name 커뮤니티post가져옴
+@communityId = UUID넣어주기
+GET http://{{server}}/findAll
+
+### createCommunity
+# @name 커뮤니티post 생성
+POST http://{{server}}
+Content-Type: application/json
+
+{
+  "userId": "dc6cd42b-b32e-4b67-bb8f-8344523e8326",
+  "title": "테스트 포스트",
+  "description": "이 커뮤니티는 테스트 토론하는 곳입니다.",
+  "imageUrls": [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg"
+  ]
+}
+
+###Get Community
+# @name 커뮤니티 조회 1개
+@communityId1 = a9c353cf-9d13-4e36-936c-45eb9442a16d
+GET http://{{server}}/{{communityId1}}
+
+###Like
+# @name 좋아요
+@comId = a9c353cf-9d13-4e36-936c-45eb9442a16d
+@userId = dc6cd42b-b32e-4b67-bb8f-8344523e8326
+POST http://{{server}}/{{comId}}/like?userId={{userId}}
+Content-Type: application/json
+
+###Like Delete
+@comId1 = a9c353cf-9d13-4e36-936c-45eb9442a16d
+@userId1 = e0cd2bc1-39b5-485c-8ac4-f00d398cbe20
+DELETE http://{{server}}/{{comId}}/like?userId={{userId}}
+
+###Get LikeCount
+# @name 카운트
+@comId2 = a9c353cf-9d13-4e36-936c-45eb9442a16d
+GET http://{{server}}/{{comId2}}/likes

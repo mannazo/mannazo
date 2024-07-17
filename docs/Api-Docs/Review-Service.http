@@ -1,0 +1,26 @@
+@server = localhost:8080/review
+
+### Test
+GET {{server}}
+
+### findall
+GET http://{{server}}/findAll
+
+### Post Review
+POST http://{{server}}
+Content-Type: application/json
+
+{
+  "reviewerId": "300e9115-f3c8-4236-8f30-bf2998746c59",
+  "revieweeId": "84e85f43-a007-43c5-a03e-dd7974922ee1",
+  "rating": 2,
+  "comment": "Hello"
+}
+
+### getReivewbyuserId
+@userId = 300e9115-f3c8-4236-8f30-bf2998746c59
+GET http://{{server}}/reviewer/{{userId}}
+
+###getReviewee
+@userId1 = 84e85f43-a007-43c5-a03e-dd7974922ee1
+GET http://{{server}}/reviewee/{{userId1}}
