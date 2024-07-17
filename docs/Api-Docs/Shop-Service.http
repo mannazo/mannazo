@@ -16,13 +16,40 @@ Content-Type: application/json
   "addr": "한국",
   "postcode": "0102-3020",
   "merchantUid": "jfdbsafd92bndfk-2jfdd",
+  "totalPrice": "9990000",
   "orderItems": [
     {
-      "productId": "1915efcc-a0ab-4806-b321-04b0ab810c0d",
+      "productId": "28f725e4-1990-4fa9-80d4-6ec3ce794d66",
       "quantity": 2
     },
-    {"productId": "68fbf1cc-7e98-4025-a0d0-14709d6c18c0",
+    {"productId": "74dd417a-f518-407e-b409-8751f8255660",
     "quantity": 4}
   ],
   "orderStatus": "Pending"
 }
+
+###post Product
+POST http://{{server}}
+Content-Type: application/json
+
+{
+  "productName": "아이폰 13 Pro",
+  "imageUrls": [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg"
+  ],
+  "description": "새로운 아이폰 13 Pro 모델입니다.",
+  "category": "전자제품",
+  "stock": 100,
+  "price": "1500000"
+}
+
+###delete product
+@productId = 87e81e4e-1c51-4dff-8dc5-1782c470d46b
+DELETE http://{{server}}/{{productId}}
+
+###order Top10
+GET http://{{server}}/order/recent
+
+###order count
+GET http://{{server}}/order/count
