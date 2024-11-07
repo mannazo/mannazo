@@ -1,125 +1,43 @@
-# 프로젝트 개요
+# 안녕하세요, Mannazu 입니다 👋
+
+> '여행객을 위한 현지인 친구 매칭 서비스' 를 개발하고 있습니다.
+> 링크 : https://www.mannazu.com
+
 ![image](https://github.com/mannazo/mannazo/assets/31683152/3ea07bfa-15c0-4068-a7a9-723953809afb)
 
-## 팀 이름
-mannazo
+## 🚀 About Us
 
-## 팀 구성원
-이동구 김준회 김동호 박정현 이효정
+- [뉴딜 일자리] 클라우드 기반 웹 데브옵스 개발자 과정
+- DevOps를 희망하는 열정적인 Team
+- 현재 Dev(React, Springboot)와 Ops(Kubernetes, CI/CD)를 깊이 있게 공부 중
 
-## 프로젝트 이름 
-렌탈 친구 서비스?
+## 🛠 Skills
 
-## 프로젝트 기간
-24.06.10 ~ 24.07.19
+### [Develop]
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
 
-* 최소 2일 전에는 마무리
+### [Database & Storage]
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/-Amazon%20S3-569A31?style=flat-square&logo=amazon-s3&logoColor=white)
 
-## 프로젝트 목적 및 목표
-목적 : 여행객을 위한 현지인 친구 매칭 서비스
-
-why? 틀에 박히지 않은 자유여행을 위한 현지인 가이드(친구)
-
-목표 : 사용자가 여행가는 지역에서 목적에 맞는 로컬 가이드를 쉽고 안전하게 만날 수 있는 플랫폼 제공.
-
-<br>
-
-## 프로젝트 범위(어떤 작업 및 기능이 필요한지)
-사용자 워크플로우
-홈페이지 접속 -> 회원가입 (카카오, 구글 etc..)   (사는지역, 나이, 성별, 성향,)  -> 로그인 (카카오, 구글 etc..)   -> (당근홈페이지 참고)
+### [Operation]
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![Argo CD](https://img.shields.io/badge/-Argo%20CD-FC6D26?style=flat-square&logo=argo&logoColor=white)
+![Harbor](https://img.shields.io/badge/-Harbor-60B932?style=flat-square&logo=harbor&logoColor=white)
 
 
-- 여행자(1번)
-	- (★★)설문 (1. 문답형, 2. 서술형 => 프로필 탄생)
-	- (★★)별점 및 후기
-	- (★)채팅
-	- 결제 기능
+## 🚀 Projects
+
+### Mannazu Project
+Mannazu 는 여행객이 방문예정인 여행지에 대한 여행 계획을 포스팅하면 현지인이 여행객을 선택해 함께 여행을 즐길 수 있는 매칭해주는 플랫폼입니다.
+- **주요 기능**: 여행 계획 포스팅, 현지인-여행객 매칭, 리뷰 시스템, 로그인(Next-auth 활용), 커뮤니티, 쇼핑, 채팅
+
+#### 미니 PC Kubernetes 클러스터
+미니 PC를 활용하여 Kubernetes 클러스터를 구축하고, Docker, Kubernetes, Jenkins, Argo CD 등의 기술을 활용하여 실제 에플리케이션을 배포하여 24시간 운용 및 관리할 수 있도록 구현하였습니다.
 
 
-
-- 가이드(2번)
-	- (★★)필터링
-	- (★★)검색 (연관 검색어)
-	- (★★)예약
-    - (★)채팅
-	- 결제 기능 (노쇼 방지용 5천원)
-
-
-
-- 관리자
-	- 채팅
-
-
-<br>
-
-## 역할 분담
-네트워크 : (주)이동구, (보조)박정현
-백?
-프론트?
-
-
-<br>
-
-## 일정 계획
-
-<br>
-
-## 요구사항
-
-<br>
-
-## 기술 스택
-
-web : nginx, apache
-    framework : react, php
-was : tomcat, Gunicorn
-    framework : java script, django
-db : mysql
-
-ci/cd : github, jenkins, harbor, argoCD
-중앙 관리 및 모니터링 도구 : Rancher
-메트릭 파이프라인 : Grafana, prometheus, 
-log 파이프라인 : ELK 스택
-
-
-## 팀 문화
-1. 인간적인 문화
-시간약속 (제시간)
-오전에는 공부 + 발표 
-
-2. 코드 문화
-
-commit 메시지
- - feat : 새로운 기능과 관련된 것을 의미한다.
-
- - fix : 오류와 같은 것을 수정했을 때 사용한다.
-
- - docs : 문서와 관련하여 수정한 부분이 있을 때 사용한다.
-
- - style : 코드의 의미와 무관한 변경사항 (포맷이나 세미콜론 등)
-
- - refactor : 코드 리팩토링
-
- - test : 테스트 코드 추가
-
- - chore : 빌드 부분 or 패키지 매니저 코드 수정
-
- - rename : 파일 수정 및 이동
-
- - remove : 파일 삭제
-
-
-3. git 문화
-
-
-
-
-### 참고사이트
-숨고
-당근
-join my trip 
-에어비앤비
-tripsoda
-realmytrip
-tripple
-행 록 hang log
+⭐️ From [Mannazu](https://www.mannazu.com)
