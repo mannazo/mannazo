@@ -10,7 +10,9 @@
 - DevOps를 희망하는 열정적인 Team
 - 현재 Dev(React, Springboot)와 Ops(Kubernetes, CI/CD)를 깊이 있게 공부 중
 
-## 🛠 Skills
+## 주요화면 및 기능
+![image](https://github.com/user-attachments/assets/8d3b27ed-6a5a-430d-8d5f-faaa23568243)
+
 
 ### [Develop]
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
