@@ -1,11 +1,17 @@
 # 여행객을 위한 현지인 친구 매칭 서비스
 
-여행객이 방문예정인 행선지에 대한 계획을 세우고 이를 포스팅하면, 이에 맞는 현지인가이드를 매칭하여 주는 플랫폼입니다.
+![image](https://github.com/user-attachments/assets/0938634d-8fa5-42c0-afed-e7c5c74a399f)
 
-일본의 “렌탈 친구 서비스”에서 아이디어를 착안하였고, “당근마켓”의 지역 기반 서비스를 벤치마킹하여 여행객들이 해당 여행지에서 
+- 여행객이 방문예정인 행선지에 대한 계획을 세우고 이를 포스팅하면, 이에 맞는 현지인가이드를 매칭하여 주는 플랫폼입니다.
+
+- 일본의 “렌탈 친구 서비스”에서 아이디어를 착안하였고, “당근마켓”의 지역 기반 서비스를 벤치마킹하여 여행객들이 해당 여행지에서 
 현지인과 쉽게 연결될 수 있는 방법을 제공하기 위한 목적으로 기획되었습니다.
 
-![image](https://github.com/mannazo/mannazo/assets/31683152/3ea07bfa-15c0-4068-a7a9-723953809afb)
+![image](https://github.com/user-attachments/assets/a811b1b6-bc4b-482a-9071-e3f49326cb95)
+
+## 주요 화면 및 기능
+![image](https://github.com/user-attachments/assets/8d3b27ed-6a5a-430d-8d5f-faaa23568243)
+
 
 ## 🚀 About Us
 
@@ -13,8 +19,7 @@
 - DevOps를 희망하는 열정적인 Team
 - 현재 Dev(React, Springboot)와 Ops(Kubernetes, CI/CD)를 깊이 있게 공부 중
 
-## 주요 화면 및 기능
-![image](https://github.com/user-attachments/assets/8d3b27ed-6a5a-430d-8d5f-faaa23568243)
+
 
 
 ### [Develop]
